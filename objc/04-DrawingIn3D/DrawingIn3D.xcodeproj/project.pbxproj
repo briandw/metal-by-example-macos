@@ -13,10 +13,10 @@
 		83E2D79A1BD597A30006DDD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E2D7981BD597A30006DDD8 /* Main.storyboard */; };
 		83E2D79C1BD597A30006DDD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E2D79B1BD597A30006DDD8 /* Assets.xcassets */; };
 		83E2D79F1BD597A30006DDD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E2D79D1BD597A30006DDD8 /* LaunchScreen.storyboard */; };
-		83E2D7B21BD598810006DDD8 /* MBEMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E2D7A71BD598810006DDD8 /* MBEMetalView.m */; settings = {ASSET_TAGS = (); }; };
-		83E2D7B51BD598810006DDD8 /* MBERenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E2D7AC1BD598810006DDD8 /* MBERenderer.m */; settings = {ASSET_TAGS = (); }; };
-		83E2D7B61BD598810006DDD8 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83E2D7AD1BD598810006DDD8 /* Shaders.metal */; settings = {ASSET_TAGS = (); }; };
-		83E2D7B81BD598810006DDD8 /* MBEMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E2D7B11BD598810006DDD8 /* MBEMathUtilities.m */; settings = {ASSET_TAGS = (); }; };
+		83E2D7B21BD598810006DDD8 /* MBEMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E2D7A71BD598810006DDD8 /* MBEMetalView.m */; };
+		83E2D7B51BD598810006DDD8 /* MBERenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E2D7AC1BD598810006DDD8 /* MBERenderer.m */; };
+		83E2D7B61BD598810006DDD8 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83E2D7AD1BD598810006DDD8 /* Shaders.metal */; };
+		83E2D7B81BD598810006DDD8 /* MBEMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E2D7B11BD598810006DDD8 /* MBEMathUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +128,7 @@
 				TargetAttributes = {
 					83E2D78B1BD597A30006DDD8 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = RMV9WBDK4Z;
 					};
 				};
 			};
@@ -285,10 +286,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RMV9WBDK4Z;
 				INFOPLIST_FILE = DrawingIn3D/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.metalbyexample.DrawingIn3D;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rantlab.DrawingIn3D;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -297,10 +299,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RMV9WBDK4Z;
 				INFOPLIST_FILE = DrawingIn3D/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.metalbyexample.DrawingIn3D;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rantlab.DrawingIn3D;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

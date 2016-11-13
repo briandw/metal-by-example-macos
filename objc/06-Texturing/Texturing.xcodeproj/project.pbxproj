@@ -188,6 +188,7 @@
 				TargetAttributes = {
 					839E18CF1BE348B800944528 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = RMV9WBDK4Z;
 					};
 				};
 			};
@@ -355,10 +356,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RMV9WBDK4Z;
 				INFOPLIST_FILE = Texturing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.metalbyexample.Texturing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rantlab.Texturing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -367,10 +369,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RMV9WBDK4Z;
 				INFOPLIST_FILE = Texturing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.metalbyexample.Texturing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rantlab.Texturing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -394,6 +397,7 @@
 				839E18E91BE348B800944528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D35C87BA1DD2310A004C78C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87B91DD2310A004C78C2 /* AppDelegate.m */; };
+		D35C87BD1DD2310A004C78C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87BC1DD2310A004C78C2 /* main.m */; };
+		D35C87BF1DD2310A004C78C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35C87BE1DD2310A004C78C2 /* Assets.xcassets */; };
+		D35C87C21DD2310A004C78C2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D35C87C01DD2310A004C78C2 /* MainMenu.xib */; };
+		D35C87CD1DD23183004C78C2 /* MBEMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87CB1DD23183004C78C2 /* MBEMathUtilities.m */; };
+		D35C87D31DD231A7004C78C2 /* MBEOBJGroup.mm in Sources */ = {isa = PBXBuildFile; fileRef = D35C87D01DD231A7004C78C2 /* MBEOBJGroup.mm */; };
+		D35C87D41DD231A7004C78C2 /* MBEOBJModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = D35C87D21DD231A7004C78C2 /* MBEOBJModel.mm */; };
+		D35C87DA1DD231D1004C78C2 /* MBEMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87D71DD231D1004C78C2 /* MBEMesh.m */; };
+		D35C87DB1DD231D1004C78C2 /* MBEOBJMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87D91DD231D1004C78C2 /* MBEOBJMesh.m */; };
+		D35C87DF1DD2322D004C78C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87DE1DD2322D004C78C2 /* ViewController.m */; };
+		D35C87E31DD232C1004C78C2 /* MBEMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87E21DD232C1004C78C2 /* MBEMetalView.m */; };
+		D35C87E61DD232D3004C78C2 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = D35C87E41DD232D3004C78C2 /* Shaders.metal */; };
+		D35C87E71DD232D3004C78C2 /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = D35C87E51DD232D3004C78C2 /* teapot.obj */; };
+		D35C87EA1DD234D1004C78C2 /* MBERenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87E91DD234D1004C78C2 /* MBERenderer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D35C87B51DD2310A004C78C2 /* Lighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lighting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35C87B81DD2310A004C78C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D35C87B91DD2310A004C78C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D35C87BC1DD2310A004C78C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D35C87BE1DD2310A004C78C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D35C87C11DD2310A004C78C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D35C87C31DD2310A004C78C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D35C87CA1DD23183004C78C2 /* MBEMathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEMathUtilities.h; sourceTree = "<group>"; };
+		D35C87CB1DD23183004C78C2 /* MBEMathUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEMathUtilities.m; sourceTree = "<group>"; };
+		D35C87CC1DD23183004C78C2 /* MBETypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBETypes.h; sourceTree = "<group>"; };
+		D35C87CF1DD231A7004C78C2 /* MBEOBJGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEOBJGroup.h; sourceTree = "<group>"; };
+		D35C87D01DD231A7004C78C2 /* MBEOBJGroup.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MBEOBJGroup.mm; sourceTree = "<group>"; };
+		D35C87D11DD231A7004C78C2 /* MBEOBJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEOBJModel.h; sourceTree = "<group>"; };
+		D35C87D21DD231A7004C78C2 /* MBEOBJModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MBEOBJModel.mm; sourceTree = "<group>"; };
+		D35C87D61DD231D1004C78C2 /* MBEMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEMesh.h; sourceTree = "<group>"; };
+		D35C87D71DD231D1004C78C2 /* MBEMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEMesh.m; sourceTree = "<group>"; };
+		D35C87D81DD231D1004C78C2 /* MBEOBJMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEOBJMesh.h; sourceTree = "<group>"; };
+		D35C87D91DD231D1004C78C2 /* MBEOBJMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEOBJMesh.m; sourceTree = "<group>"; };
+		D35C87DD1DD2322D004C78C2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D35C87DE1DD2322D004C78C2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D35C87E11DD232C1004C78C2 /* MBEMetalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEMetalView.h; sourceTree = "<group>"; };
+		D35C87E21DD232C1004C78C2 /* MBEMetalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEMetalView.m; sourceTree = "<group>"; };
+		D35C87E41DD232D3004C78C2 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		D35C87E51DD232D3004C78C2 /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
+		D35C87E81DD234D1004C78C2 /* MBERenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBERenderer.h; sourceTree = "<group>"; };
+		D35C87E91DD234D1004C78C2 /* MBERenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBERenderer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D35C87B21DD2310A004C78C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D35C87AC1DD2310A004C78C2 = {
+			isa = PBXGroup;
+			children = (
+				D35C87B71DD2310A004C78C2 /* Lighting */,
+				D35C87B61DD2310A004C78C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D35C87B61DD2310A004C78C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87B51DD2310A004C78C2 /* Lighting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35C87B71DD2310A004C78C2 /* Lighting */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87E81DD234D1004C78C2 /* MBERenderer.h */,
+				D35C87E91DD234D1004C78C2 /* MBERenderer.m */,
+				D35C87C91DD2316A004C78C2 /* Utilities */,
+				D35C87CE1DD2318B004C78C2 /* Model Loader */,
+				D35C87D51DD231AD004C78C2 /* Meshes */,
+				D35C87DC1DD231E5004C78C2 /* User Interface */,
+				D35C87E01DD23267004C78C2 /* Resources */,
+				D35C87BB1DD2310A004C78C2 /* Supporting Files */,
+			);
+			path = Lighting;
+			sourceTree = "<group>";
+		};
+		D35C87BB1DD2310A004C78C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87C31DD2310A004C78C2 /* Info.plist */,
+				D35C87BC1DD2310A004C78C2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D35C87C91DD2316A004C78C2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87CA1DD23183004C78C2 /* MBEMathUtilities.h */,
+				D35C87CB1DD23183004C78C2 /* MBEMathUtilities.m */,
+				D35C87CC1DD23183004C78C2 /* MBETypes.h */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		D35C87CE1DD2318B004C78C2 /* Model Loader */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87CF1DD231A7004C78C2 /* MBEOBJGroup.h */,
+				D35C87D01DD231A7004C78C2 /* MBEOBJGroup.mm */,
+				D35C87D11DD231A7004C78C2 /* MBEOBJModel.h */,
+				D35C87D21DD231A7004C78C2 /* MBEOBJModel.mm */,
+			);
+			name = "Model Loader";
+			sourceTree = "<group>";
+		};
+		D35C87D51DD231AD004C78C2 /* Meshes */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87D61DD231D1004C78C2 /* MBEMesh.h */,
+				D35C87D71DD231D1004C78C2 /* MBEMesh.m */,
+				D35C87D81DD231D1004C78C2 /* MBEOBJMesh.h */,
+				D35C87D91DD231D1004C78C2 /* MBEOBJMesh.m */,
+			);
+			name = Meshes;
+			sourceTree = "<group>";
+		};
+		D35C87DC1DD231E5004C78C2 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87B81DD2310A004C78C2 /* AppDelegate.h */,
+				D35C87B91DD2310A004C78C2 /* AppDelegate.m */,
+				D35C87DD1DD2322D004C78C2 /* ViewController.h */,
+				D35C87DE1DD2322D004C78C2 /* ViewController.m */,
+				D35C87E11DD232C1004C78C2 /* MBEMetalView.h */,
+				D35C87E21DD232C1004C78C2 /* MBEMetalView.m */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		D35C87E01DD23267004C78C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87E41DD232D3004C78C2 /* Shaders.metal */,
+				D35C87E51DD232D3004C78C2 /* teapot.obj */,
+				D35C87BE1DD2310A004C78C2 /* Assets.xcassets */,
+				D35C87C01DD2310A004C78C2 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D35C87B41DD2310A004C78C2 /* Lighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D35C87C61DD2310A004C78C2 /* Build configuration list for PBXNativeTarget "Lighting" */;
+			buildPhases = (
+				D35C87B11DD2310A004C78C2 /* Sources */,
+				D35C87B21DD2310A004C78C2 /* Frameworks */,
+				D35C87B31DD2310A004C78C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lighting;
+			productName = Lighting;
+			productReference = D35C87B51DD2310A004C78C2 /* Lighting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D35C87AD1DD2310A004C78C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Rantlab;
+				TargetAttributes = {
+					D35C87B41DD2310A004C78C2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RMV9WBDK4Z;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D35C87B01DD2310A004C78C2 /* Build configuration list for PBXProject "Lighting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D35C87AC1DD2310A004C78C2;
+			productRefGroup = D35C87B61DD2310A004C78C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D35C87B41DD2310A004C78C2 /* Lighting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D35C87B31DD2310A004C78C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35C87BF1DD2310A004C78C2 /* Assets.xcassets in Resources */,
+				D35C87C21DD2310A004C78C2 /* MainMenu.xib in Resources */,
+				D35C87E71DD232D3004C78C2 /* teapot.obj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D35C87B11DD2310A004C78C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35C87EA1DD234D1004C78C2 /* MBERenderer.m in Sources */,
+				D35C87BD1DD2310A004C78C2 /* main.m in Sources */,
+				D35C87DB1DD231D1004C78C2 /* MBEOBJMesh.m in Sources */,
+				D35C87DF1DD2322D004C78C2 /* ViewController.m in Sources */,
+				D35C87CD1DD23183004C78C2 /* MBEMathUtilities.m in Sources */,
+				D35C87E61DD232D3004C78C2 /* Shaders.metal in Sources */,
+				D35C87E31DD232C1004C78C2 /* MBEMetalView.m in Sources */,
+				D35C87D31DD231A7004C78C2 /* MBEOBJGroup.mm in Sources */,
+				D35C87BA1DD2310A004C78C2 /* AppDelegate.m in Sources */,
+				D35C87D41DD231A7004C78C2 /* MBEOBJModel.mm in Sources */,
+				D35C87DA1DD231D1004C78C2 /* MBEMesh.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D35C87C01DD2310A004C78C2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D35C87C11DD2310A004C78C2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D35C87C41DD2310A004C78C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D35C87C51DD2310A004C78C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D35C87C71DD2310A004C78C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RMV9WBDK4Z;
+				INFOPLIST_FILE = Lighting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rantlab.Lighting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D35C87C81DD2310A004C78C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RMV9WBDK4Z;
+				INFOPLIST_FILE = Lighting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rantlab.Lighting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D35C87B01DD2310A004C78C2 /* Build configuration list for PBXProject "Lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35C87C41DD2310A004C78C2 /* Debug */,
+				D35C87C51DD2310A004C78C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D35C87C61DD2310A004C78C2 /* Build configuration list for PBXNativeTarget "Lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35C87C71DD2310A004C78C2 /* Debug */,
+				D35C87C81DD2310A004C78C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D35C87AD1DD2310A004C78C2 /* Project object */;
+}
