@@ -19,6 +19,8 @@ typedef struct
 typedef struct
 {
     matrix_float4x4 modelViewProjectionMatrix;
+    uint32 padding[48]; //pad this out to 256
+    
 } MBEUniforms;
 
 @interface MBERenderer ()
