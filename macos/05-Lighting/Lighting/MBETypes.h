@@ -15,4 +15,7 @@ typedef struct __attribute((packed))
     matrix_float4x4 modelViewProjectionMatrix;
     matrix_float4x4 modelViewMatrix;
     matrix_float3x3 normalMatrix;
+    
+   uint32 padding[20]; //pad out to 256
+    
 } MBEUniforms;

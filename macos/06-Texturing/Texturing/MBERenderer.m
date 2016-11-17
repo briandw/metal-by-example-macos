@@ -144,7 +144,7 @@ static const NSInteger MBEInFlightBufferCount = 3;
         [renderPass setFrontFacingWinding:MTLWindingCounterClockwise];
         [renderPass setCullMode:MTLCullModeBack];
 
-        const NSUInteger uniformBufferOffset = 0; //= sizeof(MBEUniforms) * self.bufferIndex;
+        const NSUInteger uniformBufferOffset = sizeof(MBEUniforms) * self.bufferIndex;
 
         [renderPass setVertexBuffer:self.mesh.vertexBuffer offset:0 atIndex:0];
         [renderPass setVertexBuffer:self.uniformBuffer offset:uniformBufferOffset atIndex:1];

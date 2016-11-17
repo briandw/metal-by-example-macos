@@ -7,8 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MBEMetalView.h"
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController <MBEMetalViewDelegate>
 
 
 @end

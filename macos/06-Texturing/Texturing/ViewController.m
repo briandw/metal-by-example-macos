@@ -45,7 +45,7 @@ static const CGFloat kMooDuration = 3;
     [self.view addGestureRecognizer:panGesture];
 
     self.renderer = [MBERenderer new];
-    self.metalView.delegate = self.renderer;
+    self.metalView.delegate = self;
     
     [self loadResources];
 }
@@ -106,7 +106,7 @@ static const CGFloat kMooDuration = 3;
 {
     [self updateMotionWithTimestep:view.frameDuration];
     
-    self.renderer.rotationX = -self.angle.y;
+    self.renderer.rotationX = self.angle.y;
     self.renderer.rotationY = -self.angle.x;
     
     [self.renderer drawInView:view];

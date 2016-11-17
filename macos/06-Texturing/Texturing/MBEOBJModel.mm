@@ -287,7 +287,7 @@ static bool operator <(const FaceVertex &v0, const FaceVertex &v1)
 - (void)addVertexToCurrentGroup:(FaceVertex)fv
 {
     static const vector_float4 UP = { 0, 1, 0, 0 };
-//    static const vector_float2 ZERO2 = { 0, 0 };
+    static const vector_float2 ZERO2 = { 0, 0 };
 //    static const vector_float4 RGBA_WHITE = { 1, 1, 1, 1 };
     static const uint16_t INVALID_INDEX = 0xffff;
     
@@ -303,7 +303,7 @@ static bool operator <(const FaceVertex &v0, const FaceVertex &v1)
         vertex.position = vertices[fv.vi];
         vertex.normal = (fv.ni != INVALID_INDEX) ? normals[fv.ni] : UP;
 //        vertex.diffuseColor = RGBA_WHITE;
-//        vertex.texCoords = (fv.ti != INVALID_INDEX) ? texCoords[fv.ti] : ZERO2;
+        vertex.texCoords = (fv.ti != INVALID_INDEX) ? texCoords[fv.ti] : ZERO2;
 
         groupVertices.push_back(vertex);
         groupIndex = groupVertices.size() - 1;
