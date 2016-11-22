@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "MBEMetalView.h"
+#import "MBETextureLoader.h"
 #import "MBERenderer.h"
+#import "MBEMetalView.h"
+#import "MBEMatrixUtilities.h"
+@import Metal;
+@import simd;
 
 @interface ViewController ()
 @property (nonatomic, strong) MBERenderer *renderer;
@@ -39,21 +43,18 @@
                                                        userInfo:nil
                                                         repeats:YES];
     
-    self.baseZoomFactor = 2;
-    self.pinchZoomFactor = 1;
-    
     self.renderer = [[MBERenderer alloc] initWithLayer:self.metalView.metalLayer];
     
-    NSGestureRecognizer *pinchGesture = [[NSMagnificationGestureRecognizer alloc] initWithTarget:self
-                                                                                  action:@selector(magGestureDidRecognize:)];
-    [self.view addGestureRecognizer:pinchGesture];
-    
-    NSGestureRecognizer *tapGesture = [[NSClickGestureRecognizer alloc] initWithTarget:self
-                                                                              action:@selector(clickGestureDidRecognize:)];
-    [self.view addGestureRecognizer:tapGesture];
+//    NSGestureRecognizer *pinchGesture = [[NSMagnificationGestureRecognizer alloc] initWithTarget:self
+//                                                                                  action:@selector(magGestureDidRecognize:)];
+//    [self.view addGestureRecognizer:pinchGesture];
+//    
+//    NSGestureRecognizer *tapGesture = [[NSClickGestureRecognizer alloc] initWithTarget:self
+//                                                                              action:@selector(clickGestureDidRecognize:)];
+//    [self.view addGestureRecognizer:tapGesture];
 }
 
-
+/*
 - (void)magGestureDidRecognize:(NSMagnificationGestureRecognizer *)gesture
 {
     switch (gesture.state)
@@ -75,11 +76,22 @@
 - (void)clickGestureDidRecognize:(NSClickGestureRecognizer *)gesture
 {
     self.renderer.mipmappingMode = ((self.renderer.mipmappingMode + 1) % 4);
+}*/
+
+- (void)updateOrientation
+{
+    vector_float4 X = { 1.0,    0,      0,      0 };
+    vector_float4 Y = { 0,      1.0,    0,      0 };
+    vector_float4 Z = { 0,      0,      1.0,    0 };
+    vector_float4 W = { 0,      0,      0,      1 };
+    
+    matrix_float4x4 orientation = { X, Y, Z, W };
+    self.renderer.sceneOrientation = orientation;
 }
 
 - (void)draw
 {
-    self.renderer.cameraDistance = self.baseZoomFactor * self.pinchZoomFactor;
+    [self updateOrientation];
     [self.renderer draw];
 }
 
