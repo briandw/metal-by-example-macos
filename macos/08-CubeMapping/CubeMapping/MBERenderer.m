@@ -28,6 +28,7 @@
     
     if (self)
     {
+        _useRefractionMaterial = NO;
         [self buildMetal];
         [self buildPipelines];
         [self buildResources];
@@ -85,8 +86,10 @@
     self.torusReflectPipeline = [self pipelineForVertexFunctionNamed:@"vertex_reflect"
                                                fragmentFunctionNamed:@"fragment_cube_lookup"];
 
+    
     self.torusRefractPipeline = [self pipelineForVertexFunctionNamed:@"vertex_refract"
                                                fragmentFunctionNamed:@"fragment_cube_lookup"];
+     
 }
 
 - (void)buildResources
