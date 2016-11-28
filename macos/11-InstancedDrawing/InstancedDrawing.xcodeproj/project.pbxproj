@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3038AB11DD7F0A200D64075 /* MBETextureLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D3038AB01DD7F0A200D64075 /* MBETextureLoader.m */; };
+		D35C87BA1DD2310A004C78C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87B91DD2310A004C78C2 /* AppDelegate.m */; };
+		D35C87BD1DD2310A004C78C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87BC1DD2310A004C78C2 /* main.m */; };
+		D35C87BF1DD2310A004C78C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35C87BE1DD2310A004C78C2 /* Assets.xcassets */; };
+		D35C87C21DD2310A004C78C2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D35C87C01DD2310A004C78C2 /* MainMenu.xib */; };
+		D35C87D31DD231A7004C78C2 /* MBEOBJGroup.mm in Sources */ = {isa = PBXBuildFile; fileRef = D35C87D01DD231A7004C78C2 /* MBEOBJGroup.mm */; };
+		D35C87D41DD231A7004C78C2 /* MBEOBJModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = D35C87D21DD231A7004C78C2 /* MBEOBJModel.mm */; };
+		D35C87DF1DD2322D004C78C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87DE1DD2322D004C78C2 /* ViewController.m */; };
+		D35C87E31DD232C1004C78C2 /* MBEMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87E21DD232C1004C78C2 /* MBEMetalView.m */; };
+		D35C87E61DD232D3004C78C2 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = D35C87E41DD232D3004C78C2 /* Shaders.metal */; };
+		D35C87EA1DD234D1004C78C2 /* MBERenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C87E91DD234D1004C78C2 /* MBERenderer.m */; };
+		D3C9F6CC1DEC8E3A00AEDEA3 /* MBEMatrixUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C9F6CB1DEC8E3A00AEDEA3 /* MBEMatrixUtilities.m */; };
+		D3C9F6D01DEC8E8200AEDEA3 /* MBEMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C9F6CF1DEC8E8200AEDEA3 /* MBEMesh.m */; };
+		D3C9F6D31DEC8E8A00AEDEA3 /* MBETerrainMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C9F6D21DEC8E8A00AEDEA3 /* MBETerrainMesh.m */; };
+		D3C9F6D71DEC8ECA00AEDEA3 /* MBEOBJMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C9F6D61DEC8ECA00AEDEA3 /* MBEOBJMesh.m */; };
+		D3C9F6DD1DEC8F0000AEDEA3 /* MBECow.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C9F6DC1DEC8F0000AEDEA3 /* MBECow.m */; };
+		D3C9F6E91DEC8F3800AEDEA3 /* CREDITS in Resources */ = {isa = PBXBuildFile; fileRef = D3C9F6DF1DEC8F3800AEDEA3 /* CREDITS */; };
+		D3C9F6EA1DEC8F3800AEDEA3 /* spot.obj in Resources */ = {isa = PBXBuildFile; fileRef = D3C9F6E01DEC8F3800AEDEA3 /* spot.obj */; };
+		D3C9F6EB1DEC8F3800AEDEA3 /* spot.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C9F6E11DEC8F3800AEDEA3 /* spot.png */; };
+		D3C9F6EC1DEC8F3800AEDEA3 /* spot_control_mesh.obj in Resources */ = {isa = PBXBuildFile; fileRef = D3C9F6E21DEC8F3800AEDEA3 /* spot_control_mesh.obj */; };
+		D3C9F6ED1DEC8F3800AEDEA3 /* spot_quadrangulated.obj in Resources */ = {isa = PBXBuildFile; fileRef = D3C9F6E31DEC8F3800AEDEA3 /* spot_quadrangulated.obj */; };
+		D3C9F6EE1DEC8F3800AEDEA3 /* spot_texture.svg in Resources */ = {isa = PBXBuildFile; fileRef = D3C9F6E41DEC8F3800AEDEA3 /* spot_texture.svg */; };
+		D3C9F6EF1DEC8F3800AEDEA3 /* spot_triangulated.obj in Resources */ = {isa = PBXBuildFile; fileRef = D3C9F6E51DEC8F3800AEDEA3 /* spot_triangulated.obj */; };
+		D3C9F6F01DEC8F3800AEDEA3 /* CREDITS in Resources */ = {isa = PBXBuildFile; fileRef = D3C9F6E71DEC8F3800AEDEA3 /* CREDITS */; };
+		D3C9F6F11DEC8F3800AEDEA3 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C9F6E81DEC8F3800AEDEA3 /* grass.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3038AAF1DD7F0A200D64075 /* MBETextureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBETextureLoader.h; sourceTree = "<group>"; };
+		D3038AB01DD7F0A200D64075 /* MBETextureLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBETextureLoader.m; sourceTree = "<group>"; };
+		D35C87B51DD2310A004C78C2 /* InstancedDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstancedDrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35C87B81DD2310A004C78C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D35C87B91DD2310A004C78C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D35C87BC1DD2310A004C78C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D35C87BE1DD2310A004C78C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D35C87C11DD2310A004C78C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D35C87C31DD2310A004C78C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D35C87CC1DD23183004C78C2 /* MBETypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBETypes.h; sourceTree = "<group>"; };
+		D35C87CF1DD231A7004C78C2 /* MBEOBJGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEOBJGroup.h; sourceTree = "<group>"; };
+		D35C87D01DD231A7004C78C2 /* MBEOBJGroup.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MBEOBJGroup.mm; sourceTree = "<group>"; };
+		D35C87D11DD231A7004C78C2 /* MBEOBJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEOBJModel.h; sourceTree = "<group>"; };
+		D35C87D21DD231A7004C78C2 /* MBEOBJModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MBEOBJModel.mm; sourceTree = "<group>"; };
+		D35C87DD1DD2322D004C78C2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D35C87DE1DD2322D004C78C2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D35C87E11DD232C1004C78C2 /* MBEMetalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEMetalView.h; sourceTree = "<group>"; };
+		D35C87E21DD232C1004C78C2 /* MBEMetalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEMetalView.m; sourceTree = "<group>"; };
+		D35C87E41DD232D3004C78C2 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		D35C87E81DD234D1004C78C2 /* MBERenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBERenderer.h; sourceTree = "<group>"; };
+		D35C87E91DD234D1004C78C2 /* MBERenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBERenderer.m; sourceTree = "<group>"; };
+		D3C9F6CA1DEC8E3A00AEDEA3 /* MBEMatrixUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEMatrixUtilities.h; sourceTree = "<group>"; };
+		D3C9F6CB1DEC8E3A00AEDEA3 /* MBEMatrixUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEMatrixUtilities.m; sourceTree = "<group>"; };
+		D3C9F6CE1DEC8E8200AEDEA3 /* MBEMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEMesh.h; sourceTree = "<group>"; };
+		D3C9F6CF1DEC8E8200AEDEA3 /* MBEMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEMesh.m; sourceTree = "<group>"; };
+		D3C9F6D11DEC8E8A00AEDEA3 /* MBETerrainMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBETerrainMesh.h; sourceTree = "<group>"; };
+		D3C9F6D21DEC8E8A00AEDEA3 /* MBETerrainMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBETerrainMesh.m; sourceTree = "<group>"; };
+		D3C9F6D51DEC8ECA00AEDEA3 /* MBEOBJMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEOBJMesh.h; sourceTree = "<group>"; };
+		D3C9F6D61DEC8ECA00AEDEA3 /* MBEOBJMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEOBJMesh.m; sourceTree = "<group>"; };
+		D3C9F6DB1DEC8F0000AEDEA3 /* MBECow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBECow.h; sourceTree = "<group>"; };
+		D3C9F6DC1DEC8F0000AEDEA3 /* MBECow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBECow.m; sourceTree = "<group>"; };
+		D3C9F6DF1DEC8F3800AEDEA3 /* CREDITS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CREDITS; sourceTree = "<group>"; };
+		D3C9F6E01DEC8F3800AEDEA3 /* spot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spot.obj; sourceTree = "<group>"; };
+		D3C9F6E11DEC8F3800AEDEA3 /* spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spot.png; sourceTree = "<group>"; };
+		D3C9F6E21DEC8F3800AEDEA3 /* spot_control_mesh.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spot_control_mesh.obj; sourceTree = "<group>"; };
+		D3C9F6E31DEC8F3800AEDEA3 /* spot_quadrangulated.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spot_quadrangulated.obj; sourceTree = "<group>"; };
+		D3C9F6E41DEC8F3800AEDEA3 /* spot_texture.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = spot_texture.svg; sourceTree = "<group>"; };
+		D3C9F6E51DEC8F3800AEDEA3 /* spot_triangulated.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spot_triangulated.obj; sourceTree = "<group>"; };
+		D3C9F6E71DEC8F3800AEDEA3 /* CREDITS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CREDITS; sourceTree = "<group>"; };
+		D3C9F6E81DEC8F3800AEDEA3 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D35C87B21DD2310A004C78C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D35C87AC1DD2310A004C78C2 = {
+			isa = PBXGroup;
+			children = (
+				D35C87B71DD2310A004C78C2 /* InstancedDrawing */,
+				D35C87B61DD2310A004C78C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D35C87B61DD2310A004C78C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87B51DD2310A004C78C2 /* InstancedDrawing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35C87B71DD2310A004C78C2 /* InstancedDrawing */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87DC1DD231E5004C78C2 /* User Interface */,
+				D3C9F6CD1DEC8E6900AEDEA3 /* Geometery */,
+				D3C9F6D41DEC8EA800AEDEA3 /* OBJ */,
+				D35C87C91DD2316A004C78C2 /* Utilities */,
+				D3C9F6DB1DEC8F0000AEDEA3 /* MBECow.h */,
+				D3C9F6DC1DEC8F0000AEDEA3 /* MBECow.m */,
+				D35C87E81DD234D1004C78C2 /* MBERenderer.h */,
+				D35C87E91DD234D1004C78C2 /* MBERenderer.m */,
+				D35C87E41DD232D3004C78C2 /* Shaders.metal */,
+				D3C9F6DE1DEC8F3800AEDEA3 /* spot */,
+				D3C9F6E61DEC8F3800AEDEA3 /* textures */,
+				D35C87E01DD23267004C78C2 /* Resources */,
+				D35C87BB1DD2310A004C78C2 /* Supporting Files */,
+			);
+			path = InstancedDrawing;
+			sourceTree = "<group>";
+		};
+		D35C87BB1DD2310A004C78C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87C31DD2310A004C78C2 /* Info.plist */,
+				D35C87BC1DD2310A004C78C2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D35C87C91DD2316A004C78C2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D3038AAF1DD7F0A200D64075 /* MBETextureLoader.h */,
+				D3038AB01DD7F0A200D64075 /* MBETextureLoader.m */,
+				D3C9F6CA1DEC8E3A00AEDEA3 /* MBEMatrixUtilities.h */,
+				D3C9F6CB1DEC8E3A00AEDEA3 /* MBEMatrixUtilities.m */,
+				D35C87CC1DD23183004C78C2 /* MBETypes.h */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		D35C87DC1DD231E5004C78C2 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87B81DD2310A004C78C2 /* AppDelegate.h */,
+				D35C87B91DD2310A004C78C2 /* AppDelegate.m */,
+				D35C87DD1DD2322D004C78C2 /* ViewController.h */,
+				D35C87DE1DD2322D004C78C2 /* ViewController.m */,
+				D35C87E11DD232C1004C78C2 /* MBEMetalView.h */,
+				D35C87E21DD232C1004C78C2 /* MBEMetalView.m */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		D35C87E01DD23267004C78C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87BE1DD2310A004C78C2 /* Assets.xcassets */,
+				D35C87C01DD2310A004C78C2 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D3C9F6CD1DEC8E6900AEDEA3 /* Geometery */ = {
+			isa = PBXGroup;
+			children = (
+				D3C9F6CE1DEC8E8200AEDEA3 /* MBEMesh.h */,
+				D3C9F6CF1DEC8E8200AEDEA3 /* MBEMesh.m */,
+				D3C9F6D11DEC8E8A00AEDEA3 /* MBETerrainMesh.h */,
+				D3C9F6D21DEC8E8A00AEDEA3 /* MBETerrainMesh.m */,
+			);
+			name = Geometery;
+			sourceTree = "<group>";
+		};
+		D3C9F6D41DEC8EA800AEDEA3 /* OBJ */ = {
+			isa = PBXGroup;
+			children = (
+				D35C87CF1DD231A7004C78C2 /* MBEOBJGroup.h */,
+				D35C87D01DD231A7004C78C2 /* MBEOBJGroup.mm */,
+				D35C87D11DD231A7004C78C2 /* MBEOBJModel.h */,
+				D35C87D21DD231A7004C78C2 /* MBEOBJModel.mm */,
+				D3C9F6D51DEC8ECA00AEDEA3 /* MBEOBJMesh.h */,
+				D3C9F6D61DEC8ECA00AEDEA3 /* MBEOBJMesh.m */,
+			);
+			name = OBJ;
+			sourceTree = "<group>";
+		};
+		D3C9F6DE1DEC8F3800AEDEA3 /* spot */ = {
+			isa = PBXGroup;
+			children = (
+				D3C9F6DF1DEC8F3800AEDEA3 /* CREDITS */,
+				D3C9F6E01DEC8F3800AEDEA3 /* spot.obj */,
+				D3C9F6E11DEC8F3800AEDEA3 /* spot.png */,
+				D3C9F6E21DEC8F3800AEDEA3 /* spot_control_mesh.obj */,
+				D3C9F6E31DEC8F3800AEDEA3 /* spot_quadrangulated.obj */,
+				D3C9F6E41DEC8F3800AEDEA3 /* spot_texture.svg */,
+				D3C9F6E51DEC8F3800AEDEA3 /* spot_triangulated.obj */,
+			);
+			path = spot;
+			sourceTree = "<group>";
+		};
+		D3C9F6E61DEC8F3800AEDEA3 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				D3C9F6E71DEC8F3800AEDEA3 /* CREDITS */,
+				D3C9F6E81DEC8F3800AEDEA3 /* grass.png */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D35C87B41DD2310A004C78C2 /* InstancedDrawing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D35C87C61DD2310A004C78C2 /* Build configuration list for PBXNativeTarget "InstancedDrawing" */;
+			buildPhases = (
+				D35C87B11DD2310A004C78C2 /* Sources */,
+				D35C87B21DD2310A004C78C2 /* Frameworks */,
+				D35C87B31DD2310A004C78C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstancedDrawing;
+			productName = Lighting;
+			productReference = D35C87B51DD2310A004C78C2 /* InstancedDrawing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D35C87AD1DD2310A004C78C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Rantlab;
+				TargetAttributes = {
+					D35C87B41DD2310A004C78C2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RMV9WBDK4Z;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D35C87B01DD2310A004C78C2 /* Build configuration list for PBXProject "InstancedDrawing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D35C87AC1DD2310A004C78C2;
+			productRefGroup = D35C87B61DD2310A004C78C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D35C87B41DD2310A004C78C2 /* InstancedDrawing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D35C87B31DD2310A004C78C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3C9F6E91DEC8F3800AEDEA3 /* CREDITS in Resources */,
+				D3C9F6EB1DEC8F3800AEDEA3 /* spot.png in Resources */,
+				D35C87BF1DD2310A004C78C2 /* Assets.xcassets in Resources */,
+				D35C87C21DD2310A004C78C2 /* MainMenu.xib in Resources */,
+				D3C9F6EF1DEC8F3800AEDEA3 /* spot_triangulated.obj in Resources */,
+				D3C9F6EE1DEC8F3800AEDEA3 /* spot_texture.svg in Resources */,
+				D3C9F6EC1DEC8F3800AEDEA3 /* spot_control_mesh.obj in Resources */,
+				D3C9F6F01DEC8F3800AEDEA3 /* CREDITS in Resources */,
+				D3C9F6F11DEC8F3800AEDEA3 /* grass.png in Resources */,
+				D3C9F6ED1DEC8F3800AEDEA3 /* spot_quadrangulated.obj in Resources */,
+				D3C9F6EA1DEC8F3800AEDEA3 /* spot.obj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D35C87B11DD2310A004C78C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35C87EA1DD234D1004C78C2 /* MBERenderer.m in Sources */,
+				D35C87BD1DD2310A004C78C2 /* main.m in Sources */,
+				D3C9F6D71DEC8ECA00AEDEA3 /* MBEOBJMesh.m in Sources */,
+				D35C87DF1DD2322D004C78C2 /* ViewController.m in Sources */,
+				D3C9F6D31DEC8E8A00AEDEA3 /* MBETerrainMesh.m in Sources */,
+				D3C9F6DD1DEC8F0000AEDEA3 /* MBECow.m in Sources */,
+				D35C87E61DD232D3004C78C2 /* Shaders.metal in Sources */,
+				D3C9F6D01DEC8E8200AEDEA3 /* MBEMesh.m in Sources */,
+				D35C87E31DD232C1004C78C2 /* MBEMetalView.m in Sources */,
+				D3C9F6CC1DEC8E3A00AEDEA3 /* MBEMatrixUtilities.m in Sources */,
+				D3038AB11DD7F0A200D64075 /* MBETextureLoader.m in Sources */,
+				D35C87D31DD231A7004C78C2 /* MBEOBJGroup.mm in Sources */,
+				D35C87BA1DD2310A004C78C2 /* AppDelegate.m in Sources */,
+				D35C87D41DD231A7004C78C2 /* MBEOBJModel.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D35C87C01DD2310A004C78C2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D35C87C11DD2310A004C78C2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D35C87C41DD2310A004C78C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D35C87C51DD2310A004C78C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D35C87C71DD2310A004C78C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RMV9WBDK4Z;
+				INFOPLIST_FILE = InstancedDrawing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rantlab.InstancedDrawing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D35C87C81DD2310A004C78C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RMV9WBDK4Z;
+				INFOPLIST_FILE = InstancedDrawing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rantlab.InstancedDrawing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D35C87B01DD2310A004C78C2 /* Build configuration list for PBXProject "InstancedDrawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35C87C41DD2310A004C78C2 /* Debug */,
+				D35C87C51DD2310A004C78C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D35C87C61DD2310A004C78C2 /* Build configuration list for PBXNativeTarget "InstancedDrawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35C87C71DD2310A004C78C2 /* Debug */,
+				D35C87C81DD2310A004C78C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D35C87AD1DD2310A004C78C2 /* Project object */;
+}
